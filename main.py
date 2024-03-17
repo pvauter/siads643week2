@@ -16,5 +16,4 @@ def main():
     data_plot(plot_df)
 
 if __name__ == "__main__":
-    print('asdf')
     main()
