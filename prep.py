@@ -16,6 +16,7 @@ def clean_up(df):
     """
     this function drops unneccessary columns and changes dates to the correct format
     """
+    print(df.iloc[0].to_dict())
     df = df.drop(['altitude', 'speed', 'unknown_87', 'datafile', 'fractional_cadence',
                            'unknown_88', 'unknown_90', 'Cadence'], axis=1)
     df['timestamp'] = pd.to_datetime(df['timestamp'])
